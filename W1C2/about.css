@@ -16,6 +16,18 @@ h2 {
 	font-weight: 900;
 }
 
+h3 {
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+h4 {
+	font-family: 'Roboto', 'Helvetica', sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+}
+
 .intro {
 	padding-left: 40px;
 }
@@ -33,6 +45,10 @@ h2 {
 	max-width: 600px;
 	padding-left: 40px;
 }
+
+.role-title {
+	font-style: italic;
+} 
 
 nav ul li{
 	font-family: 'Roboto', 'Helvetica', sans-serif;
@@ -80,6 +96,7 @@ a:link {
 	text-decoration: none;
 	background-color: #E9FDFD;
 	padding: 5px 10px;
+	color: #000000;
 }
 
 a:hover {
