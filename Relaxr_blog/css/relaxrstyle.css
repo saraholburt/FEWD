@@ -1,0 +1,165 @@
+/*******SETUP*******/
+
+body {
+	font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
+	font-size: 16px;
+}
+
+#container-wrapper {
+	background-color: #F0EFEF; /*light grey*/
+
+}
+
+.container {
+	margin: 70px auto;
+	max-width: 960px;
+	display: flex;
+	flex-direction: row;
+}
+
+header {
+	width: 100%;
+	background-color: #033048; /*dark blue*/
+}
+
+/*******UI COMPONENS*******/
+
+p {
+	font-size: 16px;
+	line-height: 1.4;
+}
+
+h1 {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+h2 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+h3 {
+	font-size: 24px;
+	font-weight: 600;
+}
+
+a {
+	color: #033048;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+a:hover {
+	color:#FFC538;
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #033048;
+}
+
+/*******TOP NAV*******/
+
+#logo {
+	color: #ffffff;
+	display: inline-block;
+	width: 25%;
+	box-sizing: border-box;
+}
+
+nav {
+	max-width: 960px;
+	margin: 0 auto;
+	padding:30px 0px;
+}
+
+nav ol {
+	display: inline-block;
+	width:75%;
+	list-style-type: none;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+
+nav li {
+	display: inline-block;
+	padding-right: 20px;
+}
+
+nav li a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+nav li a:hover {
+	color:#FFC538;
+}
+
+
+/*******LEFT CONTENT*******/
+
+.content-left {
+	flex: 3 2 auto;
+	padding-right: 40px;
+}
+
+.article {
+	margin-bottom: 40px;
+}
+
+.article_title {
+	padding-bottom: 20px;
+}
+
+.article_image {
+	padding-bottom: 20px;
+	width: 100%;
+	height: auto;
+}
+
+/*******RIGHT CONTENT*******/
+
+.content-right {
+	flex: 1 1 auto;
+}
+
+.sidebar_section {
+	margin-bottom: 30px;
+}
+
+.sidebar_content  li {
+	line-height: 1.4;
+}
+
+.sidebar_title {
+	padding-bottom: 10px;
+}
+
+.sidebar .sidebar_section:last-child {
+	background-color: #ffffff;
+	height: 200px;
+	text-align: center;
+	padding: 20px;
+}
+
+
+/**********TABLET**********/
+
+@media (max-width: 800px) {
+		.container {
+			margin: 50px 20px;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+		}
+
+		.content-left {
+			flex: 1;
+		}
+
+		.content-right {
+			flex: 1;
+		}
+
+}
