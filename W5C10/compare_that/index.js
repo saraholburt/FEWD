@@ -12,7 +12,7 @@ function compare () {
 	if (rightSide > leftSide) {
 		$('#comparison').html("<");
 	}
-	if (rightSide == leftSide) {
+	else  {
 		$('#comparison').html("=");
 	}
 }
