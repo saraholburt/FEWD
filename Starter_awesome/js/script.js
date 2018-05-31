@@ -1,4 +1,4 @@
-$(document).ready(function(){	
+$(document).ready(function(){
 	/*********** PUT THINGS HERE ****************/
 
 	/****** QUESTION 1 ************/
@@ -17,7 +17,6 @@ $(document).ready(function(){
 	/****** QUESTION 3 ************/
 	// Check to see if a word exists in a hard-coded paragraph, display "YES" if found and "NO" if not
 
-	
 	document.getElementById('checkWork_submit').onclick = function() {
 
 		var paragraph = document.getElementById('paragraph_chunk').value;
@@ -89,7 +88,6 @@ $(document).ready(function(){
 			$('#greet2_display').html('Go Away');
 		}
 	});
-			
 
 
 	/****** QUESTION 8 ************/
@@ -115,19 +113,90 @@ $(document).ready(function(){
 	// Accept three integers from the user and display the SIGN of the product of the three (aka: display + or -)
 
 
-
 	/****** QUESTION 10 ************/
 	// Write a JavaScript program to sort three numbers. Display them in order from greatest to smallest
 
+	$('#integerSort_submit').click(function() {
+		var input1 = parseFloat($('#integerSort_input1').val());
+		var input2 = parseFloat($('#integerSort_input2').val());
+		var input3 = parseFloat($('#integerSort_input3').val());
 
+		if (input1 > input2 && input1 > input3) {
+			if (input2 > input3) {
+				$('#integerSort_display').html(input1+input2+input3);
+			}
+			else {
+				$('#integerSort_display').html(input1+input3+input2);
+			}
+		}
+		if (input2 > input1 && input2 > input3) {
+			if (input1 > input3) {
+				$('#integerSort_display').html(input2+input1+input3);
+			}
+			else {
+				$('#integerSort_display').html(input2+input3+input1);
+			}
+		}
+		if (input3 > input1 && input3 > input2) {
+			if (input2 > input1) {
+				$('#integerSort_display').html(input3+input2+input1);
+			}
+			else {
+				$('#integerSort_display').html(input3+input1+input2);
+			}
+		}
+	});
 
 	/****** QUESTION 11 ***********/
 	// Write a function called play() to play rock, paper, scissors and output the winner (player 1 or player 2). This requires ressearch on how to make a function
 
+	document.getElementById('rps_submit').onclick = function() {
+		var play1 = document.getElementById('rps_player1').value;
+		var play2 = document.getElementById('rps_player2').value;
+		play(play1, play2);
+	}
 
+	function play(play1, play2) {
+		if (play1 == 'rock') {
+			if (play2 == 'paper') {
+				document.getElementById('rps_winner_display').innerHTML = 'Player 2 wins!';
+			}
+			if (play2 == 'scissor') {
+				document.getElementById('rps_winner_display').innerHTML = 'Player 1 wins!';
+			}
+		}
+		if (play1 == 'scissors') {
+			if (play2 == 'paper') {
+				document.getElementById('rps_winner_display').innerHTML = 'Player 1 wins!';
+			}
+			if (play2 == 'rock') {
+				document.getElementById('rps_winner_display').innerHTML = 'Player 2 wins!';
+			}
+		}
+		if (play1 == 'paper') {
+			if (play2 == 'rock') {
+				document.getElementById('rps_winner_display').innerHTML = 'Player 1 wins!';
+			}
+			if (play2 == 'scissor') {
+				document.getElementById('rps_winner_display').innerHTML = 'Player 2 wins!';
+			}
+		}
+		if (play2 == play1) {
+			document.getElementById('rps_winner_display').innerHTML = 'Tie!';
+		}
+	}
 
 	/****** QUESTION 12 ***********/
 	// Calculate the factoral of a number inputted by the user
+
+		document.getElementById('factoral_submit').onclick = function () {
+			var numberInput = parseFloat(document.getElementById('factoral_input').value);
+
+			for (var i = numberInput-1; i >= 1; i--) {
+				numberInput = i * numberInput;
+				document.getElementById('factoral_display').innerHTML = numberInput;
+			}
+		}
 
 
 
@@ -137,7 +206,17 @@ $(document).ready(function(){
 	//**
 	//***
 	//****
-	//*****				
+	//*****
+
+	document.getElementById('star_submit').onclick = function() {
+		var star = '*';
+		var starArray = [];
+
+		for (var i = 0; i < 6; i++) {
+			starArray.push(star.repeat(i) + '<br>');
+			document.getElementById('star_display').innerHTML = starArray.join("");
+		}
+	}
 
 
 	/****** QUESTION 14 ***********/
@@ -145,6 +224,6 @@ $(document).ready(function(){
 
 	/****** QUESTION 15 ***********/
 	//Write a program that prints the numbers from 1 to 100. But for multiples of three print "Foo" instead of the number and for the multiples of five print "Bar". For numbers which are multiples of both three and five print "FooBar"
-	
-	
-});	
+
+
+});
