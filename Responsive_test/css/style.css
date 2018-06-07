@@ -95,6 +95,10 @@ header nav ul li a {
   color: #f9e42e;
 }
 
+#hamburger-nav {
+  display:none;
+}
+
 #hero {
   height: 700px;
   background: url(../images/header_bg.jpg) no-repeat top center #131e27;
@@ -406,5 +410,24 @@ footer p {
     display: inline-block;
     vertical-align: top;
     box-sizing: border-box;
+  }
+
+  header nav ul li {
+    display:none;
+    text-align: right;
+  }
+
+  header nav ul li:first-child {
+        margin-top:40px;
+  }
+
+  #hamburger-nav {
+    display:block;
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    position:absolute;
+    top:50px;
+    right:30px;
   }
 }
