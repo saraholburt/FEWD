@@ -1,0 +1,74 @@
+<!doctype html>
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Your Job Application</title>
+		<meta name="description" content="Teaching Code - A great starter template with cdn links to commonly used libraries">
+		<meta name="author" content="Tyler Pugh">
+		<meta property="og:title" content="" />
+		<meta property="og:type" content="" />
+		<meta property="og:url" content="" />
+		<meta property="og:image" content="" />
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+		<link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
+
+		<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+		<script type="application/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+
+		<!-- you should include a css reset here -->
+		<script src="js/script.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+
+	</head>
+	<body>
+		<div class="form_container">
+			<form method="POST" action="index.php" id="login_form">
+				<h1>Job Application</h1>
+
+				<label for="name">Name</label>
+				<input type="text" name="name" placeholder="Mike Smith" value=""><br>
+
+				<label for="address">Street Address</label>
+				<input type="text" name="address" placeholder="100 Main Street" value=""><br>
+
+				<label for="city">City</label>
+				<input type="text" name="city" placeholder="Austin" value=""><br>
+
+				<label for="zipcode">Zipcode</label>
+				<input type="text" name="zipcode" placeholder="101010" value=""><br>
+
+				<label for="state">State</label>
+				<input type="text" name="state" placeholder="Texas" value=""><br>
+
+				<label for="phone">Phone</label>
+				<input type="phone" name="phone" placeholder="(123) 456-7890"><br>
+
+				<label for="email">Email</label>
+				<input type="email" name="email" placeholder="name@email.com"><br>
+
+				<label for="upload">Upload Resume</label>
+				<button type="button" name="upload" id="resume-upload-trigger">Choose File</button>
+				<input type="file" name="upload" value="upload" id="resume-upload"><br>
+
+				<label for="method">Preferred method of contact</label>
+				<span><div class="radio-btn"><div class="radio-btn-filled"></div><!--
+				--></div><label for="phone">Phone</label></span>
+				<div class="radio-btn"><!--
+				--><div class="radio-btn-filled"></div><!--
+				--></div><label for="phone">Email</label>
+
+				<label>Position</label>
+				<select>
+				  <option value="UX Designer">UX Designer</option>
+				  <option value="Software Engineer">Software Engineer</option>
+				  <option value="Product Manager">Product Manager</option>
+				  <option value="Sales Representative">Sales Representative</option>
+				</select>
+				<br>
+				<input type="submit" value="Apply Now">
+			</form>
+		</div>
+	</body>
+</html>

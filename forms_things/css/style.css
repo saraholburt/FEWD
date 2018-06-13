@@ -1,0 +1,66 @@
+body{
+	background:#f2f2f2;
+	font-family:'Open Sans',arial;
+	font-weight:100;
+}
+
+p {
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.form_container{
+	max-width:800px;
+	margin:50px auto;
+	padding:20px;
+	border:none;
+	background:rgba(255,255,255,0.8);
+}
+
+input[type=text], input[type=phone], input[type=email], select {
+  padding: 15px 10px;
+  font-size: 16px;
+  display: block;
+  width: 400px;
+}
+
+label {
+  display: block;
+  margin-bottom: 12px;
+}
+
+button {
+  height:24px;
+  width:140px;
+  font-size: 16px;
+  background: #ffffff;
+  border-radius: 4px;
+  border: 1px solid #ebebeb;
+  cursor: pointer;
+}
+input[type=file] {
+  display:none;
+}
+
+.radio-btn {
+	border-radius: 50%;
+	background: #fff;
+	border: 1px solid #dddddd;
+	height: 20px;
+	width: 20px;
+	display: block;
+}
+
+.radio-btn-filled {
+	border-radius: 50%;
+	background: #0000ff;
+	border: none;
+	height: 8px;
+	width: 8px;
+	display: block;
+	margin: 0 auto;
+}
