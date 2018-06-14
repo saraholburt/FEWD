@@ -26,6 +26,15 @@ $(document).ready(function(){
 			}
 
 			applicants.push(applicant);
-			console.log(applicants);
+			outputApplications();
 		});
+
+		function outputApplications() {
+			var applicant_html = "";
+			for (var i=0; i<applicants.length; i++) {
+				var applicantName = "<li>" + applicants[i].name + "</li>";
+				applicant_html += applicantName;
+			}
+			$("#applicants-list").html(applicant_html);
+		}
 });
