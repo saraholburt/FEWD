@@ -28,25 +28,25 @@
 				<h1>Job Application</h1>
 
 				<label for="name">Name</label>
-				<input type="text" name="name" placeholder="Mike Smith" value=""><br>
+				<input type="text" name="name" placeholder="Mike Smith" value="" id="fullname"><br>
 
 				<label for="address">Street Address</label>
-				<input type="text" name="address" placeholder="100 Main Street" value=""><br>
+				<input type="text" name="address" placeholder="100 Main Street" value="" id="address"><br>
 
 				<label for="city">City</label>
-				<input type="text" name="city" placeholder="Austin" value=""><br>
+				<input type="text" name="city" placeholder="Austin" value="" id="city"><br>
 
 				<label for="zipcode">Zipcode</label>
-				<input type="text" name="zipcode" placeholder="101010" value=""><br>
+				<input type="text" name="zipcode" placeholder="101010" value="" id="zipcode"><br>
 
 				<label for="state">State</label>
-				<input type="text" name="state" placeholder="Texas" value=""><br>
+				<input type="text" name="state" placeholder="Texas" value="" id="state"><br>
 
 				<label for="phone">Phone</label>
-				<input type="phone" name="phone" placeholder="(123) 456-7890"><br>
+				<input type="phone" name="phone" placeholder="(123) 456-7890" id="phone"><br>
 
 				<label for="email">Email</label>
-				<input type="email" name="email" placeholder="name@email.com"><br>
+				<input type="email" name="email" placeholder="name@email.com" id="email"><br>
 
 				<label for="upload">Upload Resume</label>
 				<button type="button" name="upload" id="resume-upload-trigger">Choose File</button>
@@ -58,16 +58,16 @@
 				<div class="radio-btn"><!--
 				--><div class="radio-btn-filled"></div><!--
 				--></div><label for="phone">Email</label>
-
 				<label>Position</label>
-				<select>
-				  <option value="UX Designer">UX Designer</option>
-				  <option value="Software Engineer">Software Engineer</option>
-				  <option value="Product Manager">Product Manager</option>
-				  <option value="Sales Representative">Sales Representative</option>
-				</select>
+				<div class="select-dropdown-selection">This is the current position</div>
+					<input type="hidden" id="position" name="position">
+						<ul class="select-dropdown">
+							<li data-pval="1">VP of Marketing</li>
+							<li data-pval="2">CTO</li>
+							<li data-pval="3">Another job</li>
+						</ul>
 				<br>
-				<input type="submit" value="Apply Now">
+				<input type="submit" id="submit-job" value="Apply Now">
 			</form>
 		</div>
 	</body>

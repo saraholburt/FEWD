@@ -64,3 +64,22 @@ input[type=file] {
 	display: block;
 	margin: 0 auto;
 }
+
+.select-dropdown-selection {
+	background: #ffffff;
+	padding: 10px 16px;
+	width: 400px;
+	border: 1px solid #eeeeee;
+}
+
+.select-dropdown {
+	background: #ffffff;
+	padding: 10px 16px;
+	width: 400px;
+	border: 1px solid #eeeeee;
+}
+
+ul li {
+	text-decoration: none;
+	list-style-type: none;
+}
